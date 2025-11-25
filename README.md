@@ -1,4 +1,4 @@
-# Chocobrat Bakery – Landing Page
+# Yoga website – Landing Page
 
 This project is a recreation of the "Yoga Website" landing page UI
 using only HTML and CSS. It is a Web Development Essentials assignment.
