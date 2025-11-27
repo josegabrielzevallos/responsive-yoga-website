@@ -147,3 +147,75 @@ body{
   text-decoration: none;
   font-size: 0.98rem;
 }
+/***********************************************************************************/
+/* ========== Main ========== */
+/* Contenedor general */
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+.hero-image{
+    width: 66%;
+    height: auto;
+}
+
+/* Título principal */
+.hero-title {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* 👇 Aquí está el gradient en el texto "Yoga" */
+.gradient-text {
+  background: linear-gradient(90deg, #ff6fd8, #9b5cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-text-home {
+  display: inline-block;
+  margin: 20px;
+  padding: 8px 16px;
+  transform: rotate(-15deg);
+  background: var(--gradient-color);
+  border-radius: 10px;
+  color: white;
+}
+/* Subtítulo */
+.hero-subtitle {
+  max-width: 420px;
+  margin-top: 16px;
+  margin-bottom: 28px;
+  font-size: 0.98rem;
+  color: #7963b0;
+}
+
+/* Botón tipo diseño */
+.btn-gradient {
+  border: none;
+  border-radius: 999px;
+  padding: 14px 32px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff6fd8, #9b5cff);
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(155, 92, 255, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-gradient:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(155, 92, 255, 0.45);
+}
+
+/* Responsivo básico */
+@media (min-width: 900px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    column-gap: 40px;
+  }
+}
