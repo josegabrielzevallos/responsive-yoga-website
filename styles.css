@@ -27,6 +27,11 @@ body{
     transition: all 0.3s ease;
 }
 
+main {
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
 /* ========== HEADER / NAVBAR ========== */
 
 
@@ -146,6 +151,12 @@ body{
   font-size: 0.98rem;
 }
 
+/* ----- NEWSLETTER SECTION ----- */
+.section__newsletter {
+  
+  background: var(--gradient-color);
+  
+}
 
 /* ----- FOOTER STYLES ----- */
 
