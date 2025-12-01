@@ -43,7 +43,10 @@ main {
 
 /* ========== HEADER / NAVBAR ========== */
 
-
+.site-header{
+    background:transparent;
+    padding:.8rem 0;
+    position:relative}
 .navbar {
 	display: flex;
 	align-items: center;
@@ -59,6 +62,8 @@ main {
 	gap: 0.55rem;
 	text-decoration: none;
 }
+
+
 
 
 .logo-text {
@@ -115,7 +120,32 @@ main {
 .nav-toggle {
 	display: none;
 }
-
+.hamburger{
+	display:flex;
+	flex-direction:column;
+	background:transparent;
+	border:0;
+	cursor:pointer;
+	gap:5px;
+	z-index:1001;
+	padding:0;
+	width:24px;
+	height:auto;
+	position:relative;
+}
+.hamburger::before,
+.hamburger::after{
+	content:'';
+	display:block;
+	width:24px;
+	height:2px;
+	background:black;
+	border-radius:2px;
+	transition:all 0.3s ease;
+}
+.hamburger::before{
+    margin-bottom:5px
+}
 .nav-toggle-label {
 	display: none;
 	width: 2rem;
