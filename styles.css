@@ -1,5 +1,5 @@
 :root {
-	--gradient-color: linear-gradient(-340deg, #FF52AF 0%, #9F53FF 100%);
+	--gradient-color: linear-gradient(-281deg, #FF52AF 0%, #9F53FF 100%);
 	--first-color-light: #E5D9FD;
 	--first-color-dark: #1E0849;
 	--title-color: #220953;
@@ -13,6 +13,10 @@
 	--dark-body-color:#14092A;
 	--dark-container-color:#372A51;
     
+}
+
+html {
+	font-size: 16px;
 }
 
 *{
@@ -172,12 +176,31 @@ main {
 	gap: 16px;
 }
 
+.get-started__text h2 {
+	font-size: 2rem;
+	color: var(--title-color);
+	font-weight: 400;
+}
+
+.get-started__text p {
+	font-family: "Poppins", sans-serif;
+	font-size: 0.938rem;
+	color: var(--text-color);
+	
+}
+
 .get-started__button {
 	background: var(--gradient-color);
-	color: var(--white-color);
 	padding: 16px 28px;
 	border-radius: 64px;
 	margin-top: 8px;
+	font-family: "Poppins", sans-serif;
+	font-size: 0.938rem;
+	color: var(--white-color);
+}
+
+.get-started__button span {
+	font-size: larger;
 }
 
 .get-started__image-container {
@@ -198,6 +221,14 @@ main {
 	padding: 12px 8px;
 	border-radius: 12px;
 	font-weight: 600;
+}
+
+.get-started__tag p {
+	font-family: "Poppins", sans-serif;
+	font-size: 0.813rem;
+	background: var(--gradient-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .tag--video {
@@ -222,13 +253,15 @@ main {
 .follow__title {
 	font-size: 32px;
 	text-align: center;
+	font-size: 2rem;
+	color: var(--title-color);
+	font-weight: 400;
 }
 
 .follow__title--gradient {
 	background: var(--gradient-color);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-weight: 400;
 	margin-bottom: 24px;
 }
 
@@ -238,10 +271,21 @@ main {
 	align-items: center;
 	background: var(--gradient-color);
 	border-radius: 50%;
+	padding: 8px 0;
 	width: 88px;
 	height: 88px;
 	justify-content: space-evenly;
 	margin-bottom: 32px;
+}
+
+.follow__button p {
+	font-family: "Poppins", sans-serif;
+	font-size: 0.938rem;
+	color: var(--white-color);
+}
+
+.follow__button p:nth-child(2) {
+	font-size: larger;
 }
 
 /* Styles for the images */
@@ -282,7 +326,6 @@ main {
 	align-self: flex-end;
 }
 
-/* Prevent flex items (images) from stretching and keep their natural size */
 .follow__images-container-2 img {
 	width: auto;
 	max-width: 100%;
@@ -310,6 +353,18 @@ main {
 	gap: 12px;
 }
 
+.newsletter__text h3 {
+	font-size: 1.75rem;
+	color: var(--white-color);
+	font-weight: 400;
+}
+
+.newsletter__text p {
+	font-family: "Poppins", sans-serif;
+	font-size: 0.938rem;
+	color: var(--white-color);
+}
+
 .newsletter__form {
 	display: flex;
 	flex-direction: column;
@@ -322,6 +377,9 @@ main {
 	border-radius: 48px;
 	padding: 23px 0 23px 24px;
 	border: none;
+	font-family: "Poppins", sans-serif;
+	font-size: 0.75rem;
+	color: var(--text-color-light);
 }
 
 .newsletter__form button {
@@ -333,7 +391,9 @@ main {
 	background: var(--gradient-color);
 	cursor: pointer;
 	box-shadow: 0px 4px 12px 0px rgba(91, 10, 255, 0.25);
-
+	font-family: "Poppins", sans-serif;
+	font-size: 0.938rem;
+	color: var(--white-color);
 }
 /* ----- FOOTER STYLES ----- */
 
@@ -341,19 +401,20 @@ main {
 	background-color: #1E0849;
 	display: flex;
 	flex-direction: column;
-	font-family: "Poppins", sans-serif;
-	color: #A197B4;
 	padding: 48px 24px 32px 24px;
 }
 
 .footer h2 {
 	font-family: "Lora", serif;
-	color: #FFFFFF;
-	font-size: 20px;
+	font-size: 1.25rem;
+	font-weight: 400;
+	color: var(--white-color);
 }
 
 .footer p {
-	font-size: 15px;
+	font-family: "Poppins", sans-serif;
+	font-size: 0.938rem;
+	color: var(--text-color-light);
 }
 
 .footer__info {
@@ -374,7 +435,9 @@ main {
 }
 
 .footer__description h2 {
-	color: #FFFFFF;
+	background: var(--gradient-color);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .footer__address {
@@ -409,6 +472,8 @@ main {
 	gap: 20px;
 }
 
-.footer__copyright {
+#footer__copyright {
+	font-size: 0.75rem;
 	text-align: center;
 }
+
