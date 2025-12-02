@@ -1,75 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chocobrat Bakery</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Yoga Web Page</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
 
-		<!-- MODO OSCURO -->
-		<input type="checkbox" id="dark-mode-toggle" hidden />
-		<label for="dark-mode-toggle" class="dark-mode-label" aria-label="Activar modo oscuro">
-			<span>🌙</span>
-		</label>
-		<!-- NAVBAR -->
+	
+	<!-- NAVBAR -->
 	<!-- ========== HEADER / NAVBAR ========== -->
-  <header class="site-header">
-    <div class="container header-inner">
-			<a class="logo-text" href="#">Yoga</a>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="logo" href="#">Yoga</a>
 			<input type="checkbox" id="menu-toggle" class="menu-toggle" hidden>
+			
 			<label for="menu-toggle" class="hamburger" aria-label="Abrir menú"></label>
-        <nav class="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Classes</a></li>
-            <li><a href="#">Schedule</a></li>
-            <li><a href="#">Contect</a></li>
-        </nav>
-      </div>
-    </div>
-
-    <a href="#contact" class="btn btn-primary nav-cta">
-      <img src="./images/Vector.png" alt="moon">
-    </a>
-  
-    </header>
+			<nav class="nav">
+				<a class="nav-link" href="#">Home</a>
+				<a class="nav-link" href="#">Services 1</a>
+				<a class="nav-link" href="#">Services 2</a>
+				<a class="nav-link" href="#">Contact</a>
+				<button class="btn-icon" aria-label="Contacto"></button>
+			</nav>
+			<!-- MODO OSCURO -->
+			<input type="checkbox" id="dark-mode-toggle" hidden />
+			<label for="dark-mode-toggle" class="dark-mode-label" aria-label="Activar modo oscuro">
+				<span>🌙</span>
+			</label>
+		</div>
+	</header>
 	<main>
-        
-        <section class="hero">
-          <div class="hero-content">
-            <h1 class="hero-title">Choose Your</h1>
-            <h1 class="hero-title">Best <span class="gradient-text-home">Yoga</span> </h1>
-            <h1 class="hero-title">Teacher</h1>
-            <p class="hero-subtitle">
-              Calm your mind and body with the best yoga teachers available anytime.
-            </p>
 
-            <button class="btn-gradient">Get Started Now</button>
-          </div>
-          <div>
-            <img src="./images/home-yoga.png" alt="Yoga Pose" class="hero-image" />
-          </div>
-        </section>
+		<section class="hero">
+			<div class="container hero-inner">
+				<div class="hero-copy">
+					<h1>
+						Choose Your
+						<br>
+						Best <span class="sticker">Yoga</span>
+						<br>
+						Teacher
+					</h1>
+					<p class="lead">Calm your mind and body with the best yoga teachers available. Relax your day and
+						stay positive.</p>
+					<div class="hero-ctas">
+						<a class="get-started__button" href="#">Get Started Free <span>&rarr;</span></a>
 
-		<section >
-		
+					</div>
+					<ul class="stats">
+						<li><strong>300+</strong><span>Yoga Class</span></li>
+						<li><strong>40+</strong><span>Participants</span></li>
+					</ul>
+				</div>
+				<div class="hero-media" aria-hidden="true">
+
+					<img src="./images/home-yoga.png" alt="Hero" class="desktop-only" />
+
+				</div>
+			</div>
 		</section>
 
-		<section >
-		
+
+
+		<section class="feature-step">
+
+			<h2 class="feature-step__number">#01</h2>
+			<div class="feature-step__image-wrap">
+				
+				<img src="./images/yoga-exercise.png" alt="Yoga pose" class="feature-step__image">
+				<!-- Cambia yoga-1.png por la ruta de tu imagen -->
+			</div>
+
+			<!-- Texto -->
+			<div class="feature-step__content">
+				<div class="feature-step__icons">
+					<span>✦</span><span>✦</span><span>✦</span>
+				</div>
+				<p class="feature-step__text">
+					Get a list of specific influencers in your niche at your fingertips so you can focus
+					on managing your status.
+				</p>
+			</div>
+			<div>
+				<img src="./images/Button-link-list.png" alt="">
+			</div>
 		</section>
+		<section class="section__get-started-2">
+			<div class="get-started__text">
+				<h2>Bring Happiness To Good Health!</h2>
+				<p>If you take care of your good health, take care of your mentality and lead a healthy life with
+					positive thoughts every day.</p>
+				<a class="get-started__button" href="#">Let’s Start <span>&rarr;</span></a>
+			</div>
+			<div class="get-started__image-container">
+				<img src="./images/health-fitness.png" alt="Stretching" class="get-started__image">
+
+				<div class="get-started__tag tag--heart">
+					<p><img src="./assets/ri_heart.svg" class="tag__icon">Heart Rate</p>
+
+					<p class="p-gradient">168 bpm</p>
+				</div>
+
+				<div class="get-started__tag tag--course">
+					<p class="p-gradient">500+</p>
+					<p>free Courses</p>
+				</div>
+			</div>
+		</section>
+
 
 
 		<!-- Section of Santigo  -->
 		<section class="section__get-started">
 			<div class="get-started__text">
 				<h2>Anytime, Any Place, Any Workout</h2>
-				<p>Take your routine at any time of your day, with the new videos and with the teachers who will guide you.</p>
+				<p>Take your routine at any time of your day, with the new videos and with the teachers who will guide
+					you.</p>
 				<a class="get-started__button" href="#">Get Started Free <span>&rarr;</span></a>
 			</div>
 			<div class="get-started__image-container">
@@ -108,14 +164,15 @@
 		<section class="section__newsletter">
 			<div class="newsletter__text">
 				<h3>Join our newsletter</h3>
-				<p>Subscribe to our newsletter to be aware of many things on discounts, gifts, training and much more. Just enter your email.</p>
+				<p>Subscribe to our newsletter to be aware of many things on discounts, gifts, training and much more.
+					Just enter your email.</p>
 			</div>
 
 			<form action="" class="newsletter__form">
 				<input type="email" name="email" id="email" placeholder="For latest update send email">
 				<button class="button__suscribe">Subscribe &rarr;</button>
 			</form>
-			
+
 		</section>
 	</main>
 
@@ -152,7 +209,5 @@
 		<p id="footer__copyright">&copy; Copyright Bedimcode. All rights reserved</p>
 	</footer>
 </body>
+
 </html>
-
-
-
