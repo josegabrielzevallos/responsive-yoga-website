@@ -1,96 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chocobrat Bakery</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="./styles.css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Yoga — Landing</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="logo" href="#">Yoga</a>
+			<input type="checkbox" id="menu-toggle" class="menu-toggle" hidden>
+			<label for="menu-toggle" class="hamburger" aria-label="Abrir menú"></label>
+			<nav class="nav">
+				<a class="nav-link" href="#">Home</a>
+				<a class="nav-link" href="#">Services 1</a>
+				<a class="nav-link" href="#">Services 2</a>
+				<a class="nav-link" href="#">Contact</a>
+				<button class="btn-icon" aria-label="Contacto">☏</button>
+			</nav>
+		</div>
+	</header>
 
-    <!-- NAVBAR -->
-    <header>
-  <!-- <div class="container">
-    <nav class="navbar" aria-label="Primary navigation">
-     
-      <div class="logo">Chocobrat</div>
+	<main>
+		<section class="hero">
+			<div class="container hero-inner">
+				<div class="hero-copy">
+					<h1>
+						Choose Your
+						<br>
+						Best <span class="sticker">Yoga</span>
+						<br>
+						Teacher
+					</h1>
+					<p class="lead">Calm your mind and body with the best yoga teachers available. Relax your day and stay positive.</p>
+					<div class="hero-ctas">
+						<a class="btn btn-primary" href="#">Get Started Free</a>
+						<a class="btn btn-ghost" href="#">View Classes</a>
+					</div>
+					<ul class="stats">
+						<li><strong>300+</strong><span>Yoga Class</span></li>
+						<li><strong>40+</strong><span>Participants</span></li>
+					</ul>
+				</div>
+				<div class="hero-media" aria-hidden="true">
+					<!-- desktop hero image (replace by real image) -->
+					<img src="assets/hero-desktop.svg" alt="Hero" class="desktop-only" />
+					<!-- mobile hero image (replace by real image) -->
+					<img src="assets/hero-mobile.svg" alt="Hero mobile" class="mobile-only" />
+				</div>
+			</div>
+		</section>
 
-      
-      <ul class="nav-links">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Categories ▾</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
+		<section class="features">
+			<div class="container">
+				<ul class="features-list">
+					<li>
+						<h3>Para principiantes</h3>
+						<p>Guía paso a paso para aprender las bases.</p>
+					</li>
+					<li>
+						<h3>Profesores expertos</h3>
+						<p>Sesiones dirigidas por instructores certificados.</p>
+					</li>
+					<li>
+						<h3>Horarios flexibles</h3>
+						<p>Clases en vivo y a tu ritmo en grabaciones.</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
 
-      
-      <div class="nav-actions">
-        <div class="search-wrapper">
-          <input
-            type="text"
-            class="search-box"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="search-btn" aria-label="Search">
-            <img src="./assets/icons/ic-search.png" alt="Search icon" />
-          </button>
-        </div>
-
-        <button class="icon-btn" aria-label="User account">
-          <img src="./assets/icons/ic-user.png" alt="User icon" />
-        </button>
-
-        <button class="icon-btn" aria-label="Shopping cart">
-          <img src="./assets/icons/ic-cart1.png" alt="Cart icon" />
-        </button>
-      </div>
-    </nav>
-  </div> -->
-    </header>
-    <main>
-        
-        <section >
-            <div >
-
-            </div>
-        
-        </section>
-
-        <section >
-        
-        </section>
-
-        <section >
-        
-        </section>
-
-
-        <!-- Section of Santigo  -->
-        <section >
-        
-        </section>
-
-        <section >
-        
-        </section>
-
-        <section >
-        
-        </section>
-    
-    </main>
-   
-    <!-- FOOTER -->
-    <footer>
-    </footer>
+	<footer class="site-footer">
+		<div class="container">
+			<p>&copy; 2025 Yoga — Todos los derechos reservados</p>
+		</div>
+	</footer>
 </body>
 </html>
-
-
-
